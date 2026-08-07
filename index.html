@@ -1,59 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>American Classics</title>
-
+    <title>American Steel - Classic Car Finder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script src="cars.js"></script>
+<script src="script.js"></script>
+
 <body>
 
-    <header>
-        <h1>🇺🇸 American Classics</h1>
-        <p>Find Your Dream American Classic</p>
-    </header>
+<header>
+    <h1>American Steel</h1>
+    <p>Discover the legendary classic cars that shaped America.</p>
+</header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="garage.html">⭐ My Garage</a>
-    </nav>
 
-    <section class="hero">
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Browse Cars</a>
+    <a href="garage.html">My Garage </a>
+    <a href="#">Car History</a>
+    <a href="#">About</a>
+</nav>
 
-        <img src="images/hero.jpg" alt="Classic American Car">
 
-        <h2>Find Your American Classic</h2>
+<section class="hero">
 
-        <p>
-            Explore legendary muscle cars, trucks, and icons from America's golden age.
-        </p>
+    <img src="classic-car.jpg" alt="Classic American Car">
 
-        <button onclick="document.getElementById('car-list').scrollIntoView({behavior:'smooth'})">
-            Explore Cars
-        </button>
+    <h2>Find Your American Classic</h2>
 
-    </section>
+    <p>
+        Explore muscle cars, trucks, and legends from the golden era of automobiles.
+    </p>
 
-    <section class="car-section">
+    <button onclick="location.href='#cars'">Explore Cars</button>
 
-        <h2>Featured Classics</h2>
+</section>
 
-        <div id="car-list" class="cars">
-            <!-- JavaScript builds the car cards here -->
-        </div>
 
-    </section>
+<section>
+    <h2>Featured Classics</h2>
+    
+    
+    <div class="cars" id="cars">
 
-    <footer>
-        <p>&copy; 2026 American Classics</p>
-    </footer>
+    <div class="car-card">
+        <img src="f100.jpg" alt="1970 Ford F-100">
+        <h3>1970 Ford F-100</h3>
+        <p>Classic American pickup with legendary durability.</p>
+        <p><strong>Engine:</strong> 300 Inline-6 / 390 V8</p>
+        <button onclick="favoriteCar('1970 Ford F-100')">
+        Favorite
+</button>
+        <button onclick="location.href='f100.html'">
+    View Truck
+</button>
+    </div>
 
-    <script src="cars.js"></script>
-    <script src="script.js"></script>
+    <div class="car-card">
+        <img src="camaro.jpg" alt="1969 Chevrolet Camaro">
+        <h3>1969 Chevrolet Camaro</h3>
+        <p>A muscle car icon built for performance.</p>
+        <p><strong>Engine:</strong> 350 V8 / 396 Big Block</p>
+        <button>View Car</button>
+    </div>
+
+    <div class="car-card">
+        <img src="mustang.jpg" alt="1967 Ford Mustang">
+        <h3>1967 Ford Mustang</h3>
+        <p>The pony car that changed American performance.</p>
+        <p><strong>Engine:</strong> 289 V8 / 390 V8</p>
+        <button>View Car</button>
+    </div>
+
+</div>
+
+</section>
+
+
+<footer>
+    <p>© 2026 American Steel</p>
+</footer>
+
 
 </body>
+
+</html>
 
 </html>
