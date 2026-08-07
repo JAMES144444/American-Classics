@@ -1,3 +1,5 @@
+/* ===== MAIN PAGE ===== */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,31 +9,45 @@ body {
 }
 
 
+/* ===== HEADER ===== */
+
 header {
     background-color: #111;
     padding: 40px;
     border-bottom: 4px solid #b87333;
 }
 
-
 header h1 {
     font-size: 50px;
     color: #d4af37;
+    margin: 0;
 }
 
+header p {
+    font-size: 18px;
+}
+
+
+/* ===== NAVIGATION ===== */
 
 nav {
     background-color: #333;
     padding: 15px;
 }
 
-
 nav a {
     color: white;
     margin: 20px;
     text-decoration: none;
+    font-size: 18px;
 }
 
+nav a:hover {
+    color: #d4af37;
+}
+
+
+/* ===== BUTTONS ===== */
 
 button {
     padding: 15px 30px;
@@ -39,30 +55,16 @@ button {
     color: white;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d4af37;
+    color: black;
 }
 
 
-.cars {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-
-.car-card {
-    background-color: #333;
-    width: 250px;
-    padding: 25px;
-    border-radius: 15px;
-}
-
-
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #111;
-}
+/* ===== HERO SECTION ===== */
 
 .hero {
     padding: 80px 20px;
@@ -76,11 +78,33 @@ footer {
     box-shadow: 0px 10px 30px black;
 }
 
+
+/* ===== CAR GRID ===== */
+
 .cars {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    padding: 40px;
+}
+
+
+/* ===== CAR CARDS ===== */
+
+.car-card {
+    background-color: #333;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px black;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
 }
 
 
@@ -91,32 +115,32 @@ footer {
     border-radius: 10px;
 }
 
-.car-card button {
-    background-color: #b30000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.car-card {
-    background-color: white;
-    color: black;
-    width: 300px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px gray;
-    text-align: center;
-}
 
 .car-card h3 {
-    color: #003b5c;
+    color: #d4af37;
 }
 
+
 .car-card p {
-    color: #333;
+    color: white;
 }
+
+
+/* ===== FAVORITE BUTTON ===== */
+
+.car-card button {
+    background-color: #b87333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.car-card button:hover {
+    background-color: #d4af37;
+    color: black;
+}
+
+
+/* ===== INDIVIDUAL CAR PAGE ===== */
 
 .car-page img {
     width: 100%;
@@ -124,65 +148,62 @@ footer {
     border-radius: 15px;
 }
 
+
+/* ===== PRICE BOX ===== */
+
 .price-box {
-    background-color: #f4f4f4;
+    background-color: #333;
     width: 60%;
     margin: 25px auto;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px gray;
+    box-shadow: 0 4px 10px black;
 }
 
 .price-box h2 {
-    color: #003b5c;
+    color: #d4af37;
 }
 
 .price-box p {
-    color: #003b5c
+    color: white;
 }
 
 .price-box strong {
     font-size: 22px;
 }
 
-.condition h3 {
-    color: #FFFFFF;
-}
 
- .condition p {
-    color: #FFFFFF;
-}
+/* ===== INFO SECTIONS ===== */
 
-.location h3 {
-    color:#FFFFFF;
-}
-
-.location p {
-   color: #FFFFFF;
-}
-
-.check h3 {
-    color: #FFFFFF;
-}
-
-.check p {
-   color: #FFFFFF;
-}
-
-
+.condition h3,
+.location h3,
+.check h3,
 .timeline h3 {
-    color: #FFFFFF;
+    color: #d4af37;
 }
 
- .timeline p {
-   color: #FFFFFF;
+
+.condition p,
+.location p,
+.check p,
+.timeline p {
+    color: white;
 }
+
+
+/* ===== GARAGE PAGE ===== */
 
 #garage-cars {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    padding: 40px;
+}
+
+
+#garage-cars .car-card {
+    background-color: #333;
 }
 
 
@@ -194,6 +215,11 @@ footer {
 }
 
 
-#garage-cars button {
-    background-color: #b30000;
+/* ===== FOOTER ===== */
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #111;
+    border-top: 4px solid #b87333;
 }
